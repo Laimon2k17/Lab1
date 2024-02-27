@@ -107,8 +107,12 @@ def measure_time_sorted(arr):
     end_time = time.time()
     return sorted_arr, end_time - start_time
 
+# Ввод пользовательских данных
+n = int(input("Введите количество строк в матрице: "))
+m = int(input("Введите количество столбцов в матрице: "))
+
 # Генерация случайной матрицы размером 5x5
-matrix = generate_matrix(5, 5)
+matrix = generate_matrix(n, m)
 print("Исходная матрица:")
 for row in matrix:
     print(row)
